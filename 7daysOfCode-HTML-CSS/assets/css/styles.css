@@ -2,8 +2,11 @@
     --branco: #ffffff;
     --cinza-principal: #3a404e;
     --cinza-secundario: #667085;
+    --cinza-escuro: #101828;
     --vermelho-escuro: #8E2424;
-    -preto: #000000;
+    --preto: #000000;
+    --cor-de-fundo: rgba(142, 36, 36, 0.05);
+    --cor-borda: #eaecf0;
 }
 
 body {
@@ -14,36 +17,35 @@ body {
 .navbar {
     background-color: var(--branco);
     display: flex;
-    align-items: center;
-    margin: 1em 3em ;
-    justify-content: auto;
+    justify-content: space-around;
+    padding: 1em 4em;
+    
 }
 
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.container__titulo {
+.navbar__titulo {
     display: flex;
     align-items: center;
     text-align: center;
     font-size: 18px;
     font-weight: 500;
     color: var(--cinza-principal);
-    padding-right: 8em;
+    
 }
 
-.container__titulo img {
+.navbar__titulo img {
     padding-right: 0.5em;
 }
 
-.container__lista, .container__opcoes {
+.navbar__lista, .navbar__opcoes {
     display: flex;
 }
 
-.container__lista-link {
+.navbar__lista {
+    align-items: center;
+    padding-left: -50em;
+}
+
+.navbar__lista-link {
     padding-left: 2em;
     font-size: 16px;
     font-weight: 500;
@@ -51,16 +53,15 @@ body {
 
 }
 
-.container__opcoes {
-    padding-left: 21em;
+.navbar__opcoes {
     align-items: center;
 }
 
-.container__opcoes-login {
+.navbar__opcoes-login {
     padding-right: 2em;
 }
 
-.container__opcoes-botao {
+.navbar__opcoes-botao {
     padding: 1em 1em;
     font-weight: 500;
     background: var(--vermelho-escuro);
@@ -85,6 +86,7 @@ body {
     font-size: 48px;
     font-weight: 600;
     padding: 1em 0;
+    color: var(--cinza-escuro);
 }
 
 .cabecalho__descricao {
@@ -96,6 +98,7 @@ body {
 
 .metricas {
     display: flex;
+    justify-content: space-around;
     align-items: initial;
     width: 100%;
     height: 288px;
@@ -122,9 +125,122 @@ body {
     font-size: 18px;
     font-weight: 500;
     padding: 2em 0;
+    color: var(--cinza-escuro);
 }
 
 .metricas__descricao {
     font-weight: 400;
     color: var(--cinza-secundario);
+}
+
+.vagas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5em;
+}
+
+.vagas__conteudo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.vagas__conteudo-titulo {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--vermelho-escuro);
+    background-color: var(--cor-de-fundo);
+    border-radius: 16px;
+    padding: 0.5em 1em;
+    margin: auto;
+}
+
+.vagas__conteudo-texto {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--cinza-escuro);
+    padding: 1em 0;
+}
+
+.vagas__conteudo-descricao {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--cinza-secundario);
+    padding-bottom: 3em;
+}
+
+.vagas__descricao {
+    padding: 5em 3em;
+    width: 60%;
+}
+
+.vagas__descricao-area {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--cinza-escuro);
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.vagas__lista {
+    padding: 1em 0;
+}
+
+.vagas__lista-titulo {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--cinza-escuro);
+    padding-bottom: 2em;
+}
+
+.vagas__lista-item {
+    padding: 2em 2em;
+    border: 1px solid var(--cor-borda);
+    border-radius: 16px;
+}
+
+.vagas__lista-valores {
+    display: flex;
+    justify-content: start
+}
+
+.vagas__lista-descricao{
+    padding-right: 2em;
+    font-weight: 500;
+    color: var(--cinza-secundario);
+}
+
+.depoimentos {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.depoimentos__card {
+    text-align: center;
+    width: 80%;
+    background: var(--cor-de-fundo);
+    margin-bottom: 5em;
+}
+
+.depoimentos__texto {
+    
+}
+
+.depoimentos__titulo {
+    padding: 64px 64px 1em 64px;
+    font-size: 14;
+    font-weight: 600;
+    color: var(--vermelho-escuro);
+}
+
+.depoimentos__descricao {
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--cinza-escuro);
+    text-align: center;
+    padding-bottom: 1em;
 }
