@@ -7,6 +7,9 @@
     --preto: #000000;
     --cor-de-fundo: rgba(142, 36, 36, 0.05);
     --cor-borda: #eaecf0;
+    --borda-secundaria: #d0d5dd;
+    --cor-de-fundo-secundaria: #f9fafb;
+    --cinza-claro: #98a2b3;
 }
 
 body {
@@ -244,3 +247,76 @@ body {
     text-align: center;
     padding-bottom: 1em;
 }
+
+.depoimentos__colaborador {
+    text-align: center;
+}
+
+.depoimentos__colaborador-nome {
+    font-weight: 500;
+    color: var(--cinza-escuro);
+    padding: 1rem 0;
+}
+
+.depoimentos__colaborador-funcao {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--cinza-secundario);
+    padding-bottom: 5rem;
+}
+
+.formulario {
+    text-align: center;
+    background: var(--cor-de-fundo-secundaria);
+}
+
+.formulario__titulo {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--cinza-escuro);
+    padding: 2rem 0;
+}
+
+.formulario__texto {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--cinza-secundario);
+    padding-bottom: 2rem;
+}
+
+.formulario__opcoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+
+}
+
+.formulario__email {
+    border: 1px solid var(--borda-secundaria);
+    border-radius: 6px;
+    margin-right: 2em;
+    padding: 1em;
+    width: 20%;
+    color: var(--cinza-secundario);
+}
+
+.formulario__botao {
+    font-weight: 500;
+    padding: 1rem 1.5rem;
+    background-color: var(--vermelho-escuro);
+    border-radius: 6px;
+    color: var(--branco);
+}
+
+.rodape {
+    background: var(--cor-de-fundo-secundaria);
+    text-align: center;
+}
+
+.rodape__texto {
+    font-weight: 400;
+    color: var(--cinza-claro);
+    padding-bottom: 6rem;
+}
+
