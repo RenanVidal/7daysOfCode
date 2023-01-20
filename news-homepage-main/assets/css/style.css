@@ -1,5 +1,6 @@
 @import url("./header.css");
-@import url("./conteudoPrincipal.css");
+@import url("./conteudo.css");
+@import url("./materias.css");
 
 :root {
     --cor-de-fundo: #ebecee;
