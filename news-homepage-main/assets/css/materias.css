@@ -25,7 +25,7 @@
 .materias__item-posicao {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--cinza-primario);
+    color: var(--Grayish-blue);
     padding-top: .5rem;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .materias__link:hover {
-    color: salmon;
+    color: var(--Soft-red);
 }
 
 @media screen and (min-width: 1440px) {
@@ -43,26 +43,31 @@
     .materias__lista {
         display:  flex;
     }
-
+    
     .materia__imagem {
         width: 10rem;
-        height: auto;
+        height: 10rem;
     }
 
+    .materias__item {
+        margin-left: .5rem;
+        width: 100%;
+    }
+
+
     .materias__item-posicao {
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: 700;
-        color: var(--cinza-primario);
         padding-top: .5rem;
     }
     
     .materias__item-titulo {
-        font-size: 1rem;
+        font-size: 1.3rem;
         font-weight: 800;
         margin: 1rem 0;
     }
     
-
-    
-
+    .materias__item-texto {
+        font-size: 1rem;
+    }
 }

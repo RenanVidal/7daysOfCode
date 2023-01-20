@@ -8,18 +8,24 @@
     --laranja: #eb9b00;
     --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     --fonte-principal: "Inter";
-    --azul: #002f52;
-    --fonte-secundaria: "Josefin Sans";
     --preto: #000000;
     --cinza-primario: #858585;
     --cinza-secundario: #474646;
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+
    }
    
    body {
-       background-color: var(--branco);
+       background-color: var(--Off-white);
        font-family: var(--fonte-principal);
-       font-size: 16px;
+       font-size: 15px;
        padding: 0 1rem;
+       color: var(--Dark-grayish-blue);
    }
 
    @media screen and (min-width: 1440px) {

@@ -147,3 +147,21 @@ body {
   .banner__btn i {
     margin-right: 0.5rem;
   }
+
+  /* === Trilha Filmes e Séries === */
+
+  .trilha__filmesSeries {
+    position: absolute;
+    bottom: 60px;
+  }
+
+  .trilha__titulos {
+    font-size: 1.2vw;
+    color: white;
+    line-height: 1.25;
+    padding: 1rem 13rem 0 0;
+  }
+
+  .trilha__filmesSeries-imagem {
+    width: 95vw;
+  }
