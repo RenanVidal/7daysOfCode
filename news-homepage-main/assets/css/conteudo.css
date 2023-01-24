@@ -68,6 +68,7 @@
 
 .conteudo__destaques-subtitulo:hover {
     color: var(--Soft-orange);
+    cursor: pointer;
 }
 
 
